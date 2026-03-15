@@ -1,4 +1,4 @@
-# Leonid Kokorev / LeoTechPro
+# Leonid Kokorev
 
 **DevOps / SRE / AI Automation / Operational Engineering**
 
