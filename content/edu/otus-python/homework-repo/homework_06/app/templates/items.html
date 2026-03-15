@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Items</title>
+</head>
+<body>
+    <h1>Items</h1>
+    <a href="/add">Add item</a>
+    <ul>
+    {% for item in items %}
+        <li><strong>{{ item.name }}</strong>: {{ item.description }}</li>
+    {% else %}
+        <li>No items yet</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

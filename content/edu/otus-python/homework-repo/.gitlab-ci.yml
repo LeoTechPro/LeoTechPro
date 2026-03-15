@@ -1,0 +1,16 @@
+image: python:3.12
+
+stages:
+  - test
+
+pytest:
+  stage: test
+  script:
+    - pip install -r requirements-dev.txt
+    - pytest
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "master"'
+      when: on_success
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: manual
+    - when: never
