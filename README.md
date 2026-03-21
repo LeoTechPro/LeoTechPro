@@ -2,6 +2,29 @@
 
 **DevOps / SRE / AI Automation / Operational Engineering**
 
+## Target Role
+
+`/git/leonid` — `standalone-product`: личный сайт и публичные материалы владельца, не входящие в product-core семейства.
+
+## Canonical Ownership
+
+- owner personal/public content владельца;
+- не owner family backend-core, shared schemas, product contracts или ops tooling проектов.
+
+## What Lives Here
+
+- личный сайт, docs/lab/edu/archive разделы и связанные публичные материалы.
+
+## What Must Not Live Here
+
+- canonical product-core семейства;
+- shared runtime-state, secrets и ops ownership чужих проектов;
+- попытки описывать здесь source-of-truth по `intdata core`.
+
+## Relations to `intdata core`
+
+Этот repo вне архитектуры canonical `intdata core` и не участвует в product-family ownership decisions.
+
 I build reliable technical contours: infrastructure, automation, monitoring, agent workflows, and knowledge-driven operations.
 
 Работаю на стыке эксплуатации, автоматизации и организационного порядка: стабилизирую сервисы, собираю AI-контуры под контролем, убираю ручной хаос из процессов и превращаю разрозненные инструменты в рабочую систему.
