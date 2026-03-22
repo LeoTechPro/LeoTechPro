@@ -50,3 +50,10 @@ Keep this managed block so 'openspec update' can refresh the instructions.
 - попытка разместить здесь product-core или ops-runtime других проектов;
 - смешение personal/public content и internal process tooling;
 - решения, которые делают repo зависимым owner-контуром family backend.
+
+## Git и завершение работы
+
+- Перед новой работой в этом git-репозитории агент обязан проверить чистоту дерева и upstream текущей ветки; обязательный `git pull` выполняется только при clean tree и валидном upstream.
+- Если дерево грязное, upstream отсутствует, upstream gone или `git pull` требует ручного решения, работа останавливается до явных инструкций владельца.
+- Любая завершённая правка в `/int/leonid` считается незавершённой, пока в пределах текущей задачи не создан как минимум один локальный commit в этом repo.
+- `git push` и прочие remote-операции остаются отдельным шагом и не выполняются автоматически без owner approval или явного требования локального процесса.
