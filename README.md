@@ -31,6 +31,12 @@ I build reliable technical contours: infrastructure, automation, monitoring, age
 - [**Edu**](./edu/) — учебные курсы и выполненные задания.
 - [**Archive**](./archive/) — архивные проекты, старые скрипты и decommissioned code snapshot кейсы ERP/ITSM.
 
+## Git Branch Policy
+
+- для каждого checkout/worktree локально включаем `git config core.hooksPath .githooks`, чтобы активировать tracked guardrail из `.githooks/pre-push`;
+- любой push в удалённый `main` требует явный `ALLOW_MAIN_PUSH=1` и допускается только из локальной `main`;
+- push в `dev` и другие non-main branches этим repo-local guardrail не ограничивается.
+
 ## Публичные проекты
 
 ### [intTools](https://github.com/LeoTechPro/intTools)
@@ -74,4 +80,3 @@ Bootstrap начинается пустым: новые `change-id` создаю
 
 Текущие capability specs этого репозитория хранятся в подкаталогах `openspec/specs/*`.
 Bootstrap начинается пустым: по умолчанию расширяем существующие capability specs и не создаём дубли без явного одобрения владельца.
-
