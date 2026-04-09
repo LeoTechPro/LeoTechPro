@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
+from django.core.exceptions import ImproperlyConfigured
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -30,11 +31,18 @@ def _env_list(name, default=''):
     return [item.strip() for item in value.split(',') if item.strip()]
 
 
+def _env_required(name):
+    value = os.getenv(name)
+    if not value:
+        raise ImproperlyConfigured('%s environment variable is required' % name)
+    return value
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY', 'qm$j_itzw2epj&n3b&(&%=g5kx((fa%gq0aue_##5^ym5uo#+w')
+SECRET_KEY = _env_required('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = _env_bool('DEBUG', default=False)

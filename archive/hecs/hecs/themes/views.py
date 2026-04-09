@@ -92,13 +92,13 @@ def signup_page(request):
         form = SignupForm(request.POST)
         if not (form.data['login'] and form.data['password'] and form.data['password_1'] and form.data['firstname'] and form.data['lastname']):
             return redirect('/signup?missing')
+        if form.data['password'] != form.data['password_1']:
+            return redirect('/signup?passwords_not_match')
         try:
             user = User.objects.create_user(form.data['login'], password=form.data['password'], first_name=form.data['firstname'], last_name=form.data['lastname'])
             user.save()
         except IntegrityError:
             return redirect('/signup?login_used')
-        if form.data['password'] != form.data['password_1']:
-            return redirect('/signup?passwords_not_match')
         user = authenticate(username=form.data['login'], password=form.data['password'])
         login(request, user)
         return redirect('/')
