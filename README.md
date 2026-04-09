@@ -67,6 +67,12 @@ I build reliable technical contours: infrastructure, automation, monitoring, age
 
 Ниже восстановлено содержимое удалённых repo-owned `README.md` из предыдущего состояния репозитория.
 
+### `archive/hecs` и `archive/hecs-deploy`
+
+- `archive/hecs` — legacy Django-проект HECS (исходники + историческая SQLite БД).
+- `archive/hecs-deploy` — deployment-контур для `hecs.intdata.pro` (`Dockerfile`, `docker-compose.yml`, `nginx-hecs.conf`, `.env.example`, runbook).
+- Публикация рассчитана на `vds.intdata.pro` через `docker compose` + `nginx` + `certbot`.
+
 ### `openspec/changes/`
 
 #### OpenSpec Changes
