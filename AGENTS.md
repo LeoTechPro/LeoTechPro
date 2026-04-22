@@ -1,4 +1,4 @@
-<!-- OPENSPEC:START -->
+﻿<!-- OPENSPEC:START -->
 # OpenSpec Instructions
 
 These instructions are for AI assistants working in this project.
@@ -44,14 +44,10 @@ When rules conflict, follow the higher-priority rule and record the conflict in 
 - If code and spec disagree, fix or approve the spec path first; do not silently invent contract behavior.
 
 ### Git, Multica, and Lock Gates
-- Multica Issues are the only task-control-plane for agent work. GitHub Issues, `gh issue`, and `gh project` are not fallback coordination systems.
-- Before non-trivial implementation, commit, push, deploy, or publication, verify a reachable Multica issue in `INT-*` format.
-- Every local commit for agent work must include the current `INT-*` id in subject or body.
+- Use `$agent-issues` as the source-of-truth for Multica issue discipline, runtime `lockctl`, commit gates and worklog/status movement.
+- Repo-local `AGENTS.md` may add stricter scope-specific gates, but must not duplicate the full Multica workflow.
 - Push, deploy, and publication require explicit owner approval or a direct `push/publish` command.
-- Before file mutation, acquire a runtime `lockctl` lock for each changed file. Release locks after completion.
-- The source of truth for locks is runtime `lockctl`, not YAML notes.
 - Work only from a clean tree unless the owner explicitly scopes around existing unrelated changes; never revert or stage unrelated user changes.
-
 ### Coding and Change Discipline
 - Make minimal, targeted edits; preserve existing architecture, conventions, and file structure.
 - Do not add speculative flexibility, broad rewrites, or unrelated cleanup.
@@ -106,19 +102,10 @@ When rules conflict, follow the higher-priority rule and record the conflict in 
 - смешение personal/public content и internal process tooling;
 - решения, которые делают repo зависимым owner-контуром family backend.
 
-## Lock discipline
-
-- Любые файловые правки в `/int/leonid` запрещены без предварительного `lockctl acquire` по конкретному файлу.
-- Источник истины по активным локам — только `lockctl`; project-local заметки не подменяют runtime truth.
-- После завершения правки лок обязательно снимается через `lockctl release-path` или `lockctl release-issue`.
-
-## Multica issue and commit gate
-- Multica Issues are the mandatory task-control-plane for agent work in this repo; GitHub Issues, `gh issue`, and `gh project` are not used for agent task coordination and are not fallback.
-- Before non-trivial implementation, commit, push, deploy, or publication, the agent must identify a reachable Multica issue id in `INT-*` format for the current task.
-- Missing Multica issue id, inaccessible Multica, or an issue id that cannot be verified is a blocker: stop, report the blocker to the owner, and continue without Multica only after explicit owner approval for that exception.
-- Every local commit message must contain the current Multica task id in `INT-*` format in the subject or body. A commit without `INT-*` is forbidden.
-- Push/publication/deploy is forbidden if any commit being published for the current scope lacks a Multica `INT-*` id; fix the commit metadata through the safest owner-approved path before publication.
-- Agent locks and close-out notes must reference the Multica `INT-*` id; generic issue ids without the Multica prefix are not sufficient for agent work.
+## Lock and Multica Gates
+- Use `$agent-issues` as the source-of-truth for Multica issue discipline, runtime `lockctl`, commit gates and worklog/status movement.
+- Любые файловые правки в этом repo запрещены без предварительного `lockctl acquire` по конкретному файлу; после завершения лок обязательно снимается через `lockctl release-path` или `lockctl release-issue`.
+- Repo-local правила ниже могут ужесточать git/commit/publish flow, но не должны дублировать полный Multica workflow.
 ## Docs split
 
 - `README.md` хранит только документацию и инструкции по репозиторию.
