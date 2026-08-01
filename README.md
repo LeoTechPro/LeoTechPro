@@ -29,7 +29,6 @@ I build reliable technical contours: infrastructure, automation, monitoring, age
 - [**Docs**](./docs/) — статьи, шпаргалки и техническая документация.
 - [**Lab**](./lab/) — практические лаборатории, примеры кода и интеграции.
 - [**Edu**](./edu/) — учебные курсы и выполненные задания.
-- [**HECS**](./hecs/) — статичная карта учебных олимпиадных тем.
 - [**Archive**](./archive/) — архивные проекты, старые скрипты и decommissioned code snapshot кейсы.
 
 ## Публичные проекты
@@ -38,9 +37,6 @@ I build reliable technical contours: infrastructure, automation, monitoring, age
 
 Инфраструктурный репозиторий инструментов и автоматизации: shared tooling, gates, codex- и probe-утилиты, внутренние ops-пайплайны и поддержка команды.
 
-### [DevOps](https://github.com/LeoTechPro/DevOps)
-
-Публичный инженерный репозиторий с лабораториями, материалами и практическими DevOps/SRE-контурами.
 
 ## Сейчас мне особенно интересны
 
