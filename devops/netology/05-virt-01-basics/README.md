@@ -1,4 +1,4 @@
-<img width="1009" height="1031" alt="image" src="https://github.com/user-attachments/assets/85ea053f-fb01-418a-be59-0c124e218f82" /># Домашнее задание 1: Введение в виртуализацию
+# Домашнее задание 1: Введение в виртуализацию
 
 ## Задача 1. Эксплуатация экономичной ВМ в Yandex Cloud
 
@@ -115,3 +115,4 @@ sudo docker --version
 - Скриншот: детализация расходов
 <img width="1051" height="1070" alt="image" src="https://github.com/user-attachments/assets/0c1fee18-509e-47a6-8f7b-4402e1cdf94e" />
 
+<img width="1009" height="1031" alt="image" src="https://github.com/user-attachments/assets/85ea053f-fb01-418a-be59-0c124e218f82" />
