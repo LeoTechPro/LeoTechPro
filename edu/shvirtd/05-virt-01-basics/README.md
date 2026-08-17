@@ -21,6 +21,8 @@
 - **Область:** `ru-central1-a`
 - **Образ:** `Yandex Cloud Toolbox` (`Ubuntu 22.04.2 LTS`)
 - **Параметры:** 2 vCPU (20% vCPU), 2 GB RAM, HDD 30 GB, прерываемая ВМ
+- Скриншот конфигурации/создания `yandex-cloud`:  
+  <img width="2169" height="1207" alt="image" src="https://github.com/user-attachments/assets/3a897836-7d9c-4227-87be-27ef46c76b45" />
 
 ### 2) Подключение и Docker
 - Доступ по SSH настраивался при создании ВМ: публичный ключ я передал сразу в мастере создания, ручного добавления ключа (`ssh-add`/`eval`) не выполнял.
@@ -49,8 +51,6 @@
 
 ### 5) Что сделал после проверки
 - Продолжаю использовать для последующих ДЗ `netology-sh-devops-vm` (`fhmcsd5jqu0kbdeeuh56`) как основную ВМ.
-- Скриншот создания/конфигурации `yandex-cloud`:  
-  <img width="2169" height="1207" alt="image" src="https://github.com/user-attachments/assets/3a897836-7d9c-4227-87be-27ef46c76b45" />
 
 ---
 
