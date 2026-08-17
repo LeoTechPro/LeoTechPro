@@ -1,4 +1,4 @@
-# Домашнее задание 1: Введение в виртуализацию
+<img width="1009" height="1031" alt="image" src="https://github.com/user-attachments/assets/85ea053f-fb01-418a-be59-0c124e218f82" /># Домашнее задание 1: Введение в виртуализацию
 
 ## Задача 1. Эксплуатация экономичной ВМ в Yandex Cloud
 
@@ -107,7 +107,11 @@ sudo docker --version
 Использую уже подготовленную ВМ как эконом-ВМ для выполнения задач, пересоздание не выполнялось. В отчёт добавлены фактические параметры и скриншоты по моей ВМ.
 
 ## Скриншоты
-- Скриншот 1: создание/конфигурация ВМ
-- Скриншот 2: SSH подключение
-- Скриншот 3: `docker --version`
-- Скриншот 4: детализация расходов
+- Скриншот: создание/конфигурация ВМ
+<img width="2169" height="1207" alt="image" src="https://github.com/user-attachments/assets/3a897836-7d9c-4227-87be-27ef46c76b45" />
+- Скриншот: SSH подключение и docker-version
+<img width="1009" height="1031" alt="image" src="https://github.com/user-attachments/assets/34412345-bead-4d13-aae8-993e3456ed19" />
+<img width="1294" height="522" alt="image" src="https://github.com/user-attachments/assets/8465a455-313e-4338-9e85-8e8d2186f425" />
+- Скриншот: детализация расходов
+<img width="1051" height="1070" alt="image" src="https://github.com/user-attachments/assets/0c1fee18-509e-47a6-8f7b-4402e1cdf94e" />
+
