@@ -1,431 +1,397 @@
 <!DOCTYPE html>
+
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Леонид Кокорев - резюме и портфолио</title>
-    <meta
-      name="description"
-      content="Леонид Кокорев: инженер сопровождения ИС и разработчик прикладных сервисов. Опыт в MOEX, X5 Tech, Magnit Tech, Хоум Кредит; владелец и разработчик intData.pro."
-    />
-    <meta name="theme-color" content="#eef1e8" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Леонид Кокорев - резюме и портфолио" />
-    <meta
-      property="og:description"
-      content="Инженер сопровождения ИС, разработчик прикладных сервисов, владелец и разработчик intData.pro."
-    />
-    <meta property="og:url" content="https://leonid.pro/" />
-    <meta property="og:site_name" content="leonid.pro" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="canonical" href="https://leonid.pro/" />
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
-    />
-    <link rel="stylesheet" href="assets/portfolio.css" />
-  </head>
-  <body class="portfolio-page">
-    <a class="skip-link" href="#main-content">Перейти к содержимому</a>
-
-    <header class="site-header" data-header>
-      <div class="site-header__inner">
-        <a class="brand" href="#top" aria-label="На главную">
-          <span class="brand__mark">LK</span>
-          <span>leonid.pro</span>
-        </a>
-
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
-          <span>Меню</span>
-        </button>
-
-        <nav class="site-nav" id="site-menu" aria-label="Основная навигация" data-menu>
-          <a href="#resume">Резюме</a>
-          <a href="#portfolio">Портфолио</a>
-          <a href="#experience">Опыт</a>
-
-          <a href="#collaboration">Сотрудничество</a>
-          <a class="nav-pill" href="https://intdata.pro/" target="_blank" rel="noopener">intData.pro</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="main-content">
-      <section class="hero section--hero" id="top">
-        <div class="hero__content">
-          <h1><span>Леонид</span> <span>Кокорев</span></h1>
-          <p class="hero__position">Включаюсь в команду.<br />Довожу системы до работы.</p>
-          <p class="hero__lead">Сопровождение, интеграции и ИИ-автоматизация.<br />Личное сотрудничество с бизнесом.</p>
-          <div class="hero__actions">
-            <a class="button button--primary" href="https://t.me/PROintData" target="_blank" rel="noopener">Обсудить сотрудничество <span aria-hidden="true">↗</span></a>
-            <a class="button button--secondary" href="#resume">Резюме</a>
-          </div>
-        </div>
-        <div class="hero__art" aria-hidden="true"><img src="assets/orbit.png" width="800" height="900" alt="" fetchpriority="high" /></div>
-      </section>
-<div class="signal-grid" aria-label="Основные направления">
-          <article>
-            <span>01</span>
-            <h3>Разработка</h3>
-            <p>Веб-сервисы, личные кабинеты, серверная логика, API, роли доступа, SQL и прикладные интерфейсы.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Сопровождение</h3>
-            <p>Стенды, обновления, мониторинг, инциденты, эксплуатационные проверки и документация.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Данные</h3>
-            <p>PostgreSQL, Oracle, Firebird, SQL-проверки, миграции, отчеты и поиск причин в данных.</p>
-          </article>
-        </div>
-
-
-
-      <section class="section section--dark" id="portfolio">
-        <div class="section-heading">
-          <h2>От диагностики —<br />до работающего решения.</h2>
-        </div>
-
-        <div class="project-list">
-          <article class="project project--featured">
-            <div>
-              <p class="project__meta">intData.pro</p>
-              <h3>Собственный проект: сайт, серверная часть, сервисы и автоматизация.</h3>
-            </div>
-            <p>
-              Я владелец проекта и разработчик всех сервисов intData.pro. В проекте собраны сайт,
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Леонид Кокорев - резюме и портфолио</title>
+<meta content="Леонид Кокорев: инженер сопровождения ИС и разработчик прикладных сервисов. Опыт в MOEX, X5 Tech, Magnit Tech, Хоум Кредит; владелец и разработчик intData.pro." name="description"/>
+<meta content="#eef1e8" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta content="Леонид Кокорев - резюме и портфолио" property="og:title"/>
+<meta content="Инженер сопровождения ИС, разработчик прикладных сервисов, владелец и разработчик intData.pro." property="og:description"/>
+<meta content="https://leonid.pro/" property="og:url"/>
+<meta content="leonid.pro" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://leonid.pro/" rel="canonical"/>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/portfolio.css" rel="stylesheet"/>
+</head>
+<body class="portfolio-page">
+<a class="skip-link" href="#main-content">Перейти к содержимому</a>
+<header class="site-header" data-header="">
+<div class="site-header__inner">
+<a aria-label="На главную" class="brand" href="#top">
+<span class="brand__mark">LK</span>
+<span>leonid.pro</span>
+</a>
+<button aria-controls="site-menu" aria-expanded="false" class="menu-toggle" data-menu-toggle="" type="button">
+<span>Меню</span>
+</button>
+<nav aria-label="Основная навигация" class="site-nav" data-menu="" id="site-menu">
+<a href="#resume">Резюме</a>
+<a href="#portfolio">Портфолио</a>
+<a href="#experience">Опыт</a>
+<a href="#collaboration">Сотрудничество</a>
+<a class="nav-pill" href="https://intdata.pro/" rel="noopener" target="_blank">intData.pro</a>
+</nav>
+</div>
+</header>
+<main id="main-content">
+<section class="hero section--hero" id="top">
+<div class="hero__content">
+<h1><span>Леонид</span> <span>Кокорев</span></h1>
+<p class="hero__position">Включаюсь в команду.<br/>Довожу системы до работы.</p>
+<p class="hero__lead">Сопровождение, интеграции и ИИ-автоматизация.<br/>Личное сотрудничество с бизнесом.</p>
+<div class="hero__actions">
+<a class="button button--primary" href="https://t.me/PROintData" rel="noopener" target="_blank">Обсудить сотрудничество <span aria-hidden="true">↗</span></a>
+<a class="button button--secondary" href="#resume">Резюме</a>
+</div>
+</div>
+<div aria-hidden="true" class="hero__art"><img alt="" fetchpriority="high" height="900" src="assets/orbit.png" width="800"/></div>
+</section>
+<div aria-label="Основные направления" class="signal-grid">
+<article>
+<span>01</span>
+<h3>Разработка</h3>
+<p>Веб-сервисы, личные кабинеты, серверная логика, API, роли доступа, SQL и прикладные интерфейсы.</p>
+</article>
+<article>
+<span>02</span>
+<h3>Сопровождение</h3>
+<p>Стенды, обновления, мониторинг, инциденты, эксплуатационные проверки и документация.</p>
+</article>
+<article>
+<span>03</span>
+<h3>Данные</h3>
+<p>PostgreSQL, Oracle, Firebird, SQL-проверки, миграции, отчеты и поиск причин в данных.</p>
+</article>
+</div>
+<section class="section section--dark" id="portfolio">
+<div class="section-heading">
+<h2>От диагностики —<br/>до работающего решения.</h2>
+</div>
+<div class="project-list">
+<article class="project project--featured">
+<div>
+<p class="project__meta"><a class="company-link" href="https://intdata.pro/" rel="noopener" target="_blank">intData.pro</a></p>
+<h3>Собственный проект: сайт, серверная часть, сервисы и автоматизация.</h3>
+</div>
+<p>
+              Я владелец проекта и разработчик всех сервисов <a class="company-link" href="https://intdata.pro/" rel="noopener" target="_blank">intData.pro</a>. В проекте собраны сайт,
               серверная часть, рабочие панели, PostgreSQL/Supabase, интеграции, документация и проверки перед изменениями.
             </p>
-            <div class="project__tags">
-              <span>PostgreSQL</span>
-              <span>Supabase</span>
-              <span>PostgREST</span>
-              <span>nginx</span>
-              <span>JavaScript</span>
-              <span>Codex</span>
-            </div>
-          </article>
-
-          <article class="project">
-            <p class="project__meta">punkt-b.pro</p>
-            <h3>Платформа для учебного и операционного процесса.</h3>
-            <p>
+<div class="project__tags">
+<span>PostgreSQL</span>
+<span>Supabase</span>
+<span>PostgREST</span>
+<span>nginx</span>
+<span>JavaScript</span>
+<span>Codex</span>
+</div>
+</article>
+<article class="project">
+<p class="project__meta">punkt-b.pro</p>
+<h3>Платформа для учебного и операционного процесса.</h3>
+<p>
               Личные кабинеты, роли, API, SQL-проверки, внешние интеграции, инфраструктура на VDS/Timeweb Apps
               и контроль изменений перед публикацией.
             </p>
-          </article>
-
-          <article class="project">
-            <p class="project__meta">MOEX / ASTS</p>
-            <h3>Тестовые стенды торговой системы.</h3>
-            <p>
+</article>
+<article class="project">
+<p class="project__meta"><a class="company-link" href="https://www.moex.com/" rel="noopener" target="_blank">MOEX</a> / ASTS</p>
+<h3>Тестовые стенды торговой системы.</h3>
+<p>
               Мониторинг, обновления ПО, диагностика ошибок, поддержка клиентского тестирования,
               Firebird, Oracle, SQL, Zabbix и эксплуатационные регламенты.
             </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="experience">
-        <div class="section-heading">
-          <h2>Опыт, который помогает<br />видеть систему целиком</h2>
-        </div>
-
-        <div class="experience-line" aria-label="Опыт работы по годам">
-          <article class="experience-item experience-item--current">
-            <div class="experience-date">2024 - сейчас</div>
-            <div class="experience-card">
-              <span>Мосбиржа / MOEX</span>
-              <h3>Ведущий инженер тестовых стендов</h3>
-              <p>
+</article>
+</div>
+</section>
+<section class="section" id="experience">
+<div class="section-heading">
+<h2>Опыт, который помогает<br/>видеть систему целиком</h2>
+</div>
+<div aria-label="Опыт работы по годам" class="experience-line">
+<article class="experience-item experience-item--current">
+<div class="experience-date">2024 - сейчас</div>
+<div class="experience-card">
+<span><a class="company-link" href="https://www.moex.com/" rel="noopener" target="_blank">Мосбиржа / MOEX</a></span>
+<h3>Ведущий инженер тестовых стендов</h3>
+<p>
                 ASTS, мониторинг, обновления ПО, диагностика ошибок, Firebird, Oracle, SQL,
                 поддержка клиентского тестирования и эксплуатационные проверки.
               </p>
-            </div>
-          </article>
-
-          <article class="experience-item experience-item--side">
-            <div class="experience-date">2024 - сейчас</div>
-            <div class="experience-card">
-              <span>intData.pro</span>
-              <h3>Владелец проекта и разработчик сервисов</h3>
-              <p>
+</div>
+</article>
+<article class="experience-item experience-item--side">
+<div class="experience-date">2024 - сейчас</div>
+<div class="experience-card">
+<span><a class="company-link" href="https://intdata.pro/" rel="noopener" target="_blank">intData.pro</a></span>
+<h3>Владелец проекта и разработчик сервисов</h3>
+<p>
                 Сайт, серверная часть, PostgreSQL/Supabase, рабочие панели, интеграции, инфраструктура,
                 документация и проверка изменений.
               </p>
-            </div>
-          </article>
-
-          <article class="experience-item">
-            <div class="experience-date">2023 - 2024</div>
-            <div class="experience-card">
-              <span>X5 Tech</span>
-              <h3>Инженер сопровождения и интеграций</h3>
-              <p>
+</div>
+</article>
+<article class="experience-item">
+<div class="experience-date">2023 - 2024</div>
+<div class="experience-card">
+<span><a class="company-link" href="https://x5.tech/" rel="noopener" target="_blank">X5 Tech</a></span>
+<h3>Инженер сопровождения и интеграций</h3>
+<p>
                 SAP PO/ERP/CAR, Oracle, HP Service Manager, Jira, Confluence, Zabbix/Grafana,
                 IDOC/XML, SQL-проверки и поддержка инцидентов.
               </p>
-            </div>
-          </article>
-
-          <article class="experience-item">
-            <div class="experience-date">2022 - 2023</div>
-            <div class="experience-card">
-              <span>Magnit Tech</span>
-              <h3>Поддержка SAP и логистических процессов</h3>
-              <p>
+</div>
+</article>
+<article class="experience-item">
+<div class="experience-date">2022 - 2023</div>
+<div class="experience-card">
+<span><a class="company-link" href="https://magnit.tech/" rel="noopener" target="_blank">Magnit Tech</a></span>
+<h3>Поддержка SAP и логистических процессов</h3>
+<p>
                 SAP ERP, Oracle SQL, BMC Remedy, первичная диагностика инцидентов,
                 логистика, маркировка, поддержка пользователей и база знаний.
               </p>
-            </div>
-          </article>
-
-          <article class="experience-item">
-            <div class="experience-date">2020 - 2022</div>
-            <div class="experience-card">
-              <span>Хоум Кредит</span>
-              <h3>Операционное сопровождение и доступы</h3>
-              <p>
+</div>
+</article>
+<article class="experience-item">
+<div class="experience-date">2020 - 2022</div>
+<div class="experience-card">
+<span><a class="company-link" href="https://sovcombank.ru/" rel="noopener" target="_blank">Хоум Кредит — сейчас часть Совкомбанка</a></span>
+<h3>Операционное сопровождение и доступы</h3>
+<p>
                 BMC Remedy, Active Directory, Microsoft Identity Manager, Oracle SQL Developer,
                 маршрутизация заявок, шаблоны обработки, PowerShell и база знаний.
               </p>
-            </div>
-          </article>
-        </div>
-      </section>
+</div>
+</article>
+</div>
+</section>
 <section class="section section--tight" id="resume">
-        <div class="section-heading">
-          <h2>Резюме</h2>
-        </div>
-
-        <aside class="hero__summary" aria-label="Краткая сводка">
-          <div class="summary-card summary-card--dark">
-            <span class="summary-card__label">Сейчас</span>
-            <strong>MOEX + intData.pro</strong>
-            <p>
-              Веду тестовые стенды торговой системы ASTS и развиваю собственный проект intData.pro.
+<div class="section-heading">
+<h2>Резюме</h2>
+</div>
+<aside aria-label="Краткая сводка" class="hero__summary">
+<div class="summary-card summary-card--dark">
+<span class="summary-card__label">Сейчас</span>
+<strong><a class="company-link" href="https://www.moex.com/" rel="noopener" target="_blank">MOEX</a> + <a class="company-link" href="https://intdata.pro/" rel="noopener" target="_blank">intData.pro</a></strong>
+<p>
+              Веду тестовые стенды торговой системы ASTS и развиваю собственный проект <a class="company-link" href="https://intdata.pro/" rel="noopener" target="_blank">intData.pro</a>.
             </p>
-          </div>
-          <div class="summary-metrics">
-            <div>
-              <span>6+</span>
-              <p>лет коммерческого опыта</p>
-            </div>
-            <div>
-              <span>2024</span>
-              <p>старт intData.pro</p>
-            </div>
-          </div>
-        </aside>
-        <div class="resume-grid">
-          <article class="resume-lead">
-            <h3>Сопровождение, разработка, данные</h3>
+</div>
+<div class="summary-metrics">
+<div>
+<span>6+</span>
+<p>лет коммерческого опыта</p>
+</div>
+<div>
+<span>2024</span>
+<p>старт <a class="company-link" href="https://intdata.pro/" rel="noopener" target="_blank">intData.pro</a></p>
+</div>
+</div>
+</aside>
+<div class="resume-grid">
+<article class="resume-lead">
+<h3>Сопровождение, разработка, данные</h3>
 <p class="hero__lead">
             Я инженер сопровождения ИС и разработчик прикладных сервисов. Делаю веб-сервисы, базы данных,
             интеграции и инфраструктуру. Отвечаю за запуск, сопровождение и диагностику.
           </p>
-            <p>
+<p>
               Я работаю с прикладными системами: стендами, мониторингом, обновлениями, инцидентами,
               SQL, интеграциями, правами доступа, документацией и поддержкой пользователей. В собственных
               проектах добавляю к этому разработку интерфейса, серверную логику и инфраструктуру.
             </p>
-          </article>
-
-          <article>
-            <h3>Беру в работу</h3>
-            <ul class="clean-list">
-              <li>сопровождение прикладных ИС и тестовых стендов;</li>
-              <li>диагностика ошибок в связке приложение - база - инфраструктура;</li>
-              <li>серверная часть, SQL, API, роли доступа и интеграции;</li>
-              <li>автоматизация проверок, регламентов и повторяющихся операций.</li>
-            </ul>
-          </article>
-        </div>
-
-        </section>
-
-      <section class="section" id="stack">
-        <details class="tools-disclosure"><summary>Инструменты и практика</summary>
-
-        <div class="stack-grid">
-          <article class="tool-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="" loading="lazy" />
-            <div>
-              <h3>Linux</h3>
-              <p>Использую для серверов, VDS, сервисов, логов, прав, процессов и ежедневной диагностики.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="" loading="lazy" />
-            <div>
-              <h3>Windows</h3>
-              <p>Работал с рабочими станциями, серверными утилитами, доступами, PowerShell и поддержкой пользователей.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" loading="lazy" />
-            <div>
-              <h3>Docker</h3>
-              <p>Запускаю сервисы, базы, тестовые окружения и локальные проверки через контейнеры и compose-файлы.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="" loading="lazy" />
-            <div>
-              <h3>nginx</h3>
-              <p>Настраивал статические сайты, обратное проксирование, HTTPS, маршрутизацию и проверку виртуальных хостов.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" loading="lazy" />
-            <div>
-              <h3>PostgreSQL</h3>
-              <p>Пишу SQL, проектирую таблицы, проверяю данные, работаю с правами, RPC и прикладной логикой.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="" loading="lazy" />
-            <div>
-              <h3>Oracle</h3>
-              <p>Использовал в сопровождении, SQL-проверках, анализе инцидентов и задачах вокруг корпоративных систем.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <span class="tool-card__mark">FB</span>
-            <div>
-              <h3>Firebird</h3>
-              <p>Работаю с ним на тестовых стендах: проверки БД, диагностика и сопровождение рабочих сценариев.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="" loading="lazy" />
-            <div>
-              <h3>Supabase</h3>
-              <p>Использую как PostgreSQL-платформу для своих сервисов: данные, API, роли и серверные функции.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <span class="tool-card__mark">SAP</span>
-            <div>
-              <h3>SAP PO / ERP / CAR</h3>
-              <p>Сопровождал интеграции, idoc/XML, ритейл- и логистические процессы, инциденты и проверки данных.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="" loading="lazy" />
-            <div>
-              <h3>Jira</h3>
-              <p>Вёл задачи, инциденты, изменения и коммуникацию между разработкой, сопровождением и пользователями.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg" alt="" loading="lazy" />
-            <div>
-              <h3>Confluence</h3>
-              <p>Писал инструкции, фиксировал регламенты, собирал базы знаний и рабочие заметки по сопровождению.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <span class="tool-card__mark">ITSM</span>
-            <div>
-              <h3>BMC Remedy / HP SM</h3>
-              <p>Работал с заявками, инцидентами, маршрутами согласования, шаблонами обработки и эскалациями.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="" loading="lazy" />
-            <div>
-              <h3>Grafana</h3>
-              <p>Использовал для наблюдения за системами, проверки симптомов и быстрой оценки состояния сервисов.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <span class="tool-card__mark">ZBX</span>
-            <div>
-              <h3>Zabbix</h3>
-              <p>Работал с мониторингом серверов, алертами, доступностью стендов и первичной диагностикой отказов.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy" />
-            <div>
-              <h3>JavaScript</h3>
-              <p>Пишу интерфейсы, небольшую клиентскую логику, проверки страниц и прикладные утилиты.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy" />
-            <div>
-              <h3>Python</h3>
-              <p>Использую для автоматизации, обработки файлов, проверок, диагностики и вспомогательных скриптов.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" loading="lazy" />
-            <div>
-              <h3>Git</h3>
-              <p>Веду изменения через ветки, diff, локальные проверки, историю коммитов и аккуратную публикацию.</p>
-            </div>
-          </article>
-          <article class="tool-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg" alt="" loading="lazy" />
-            <div>
-              <h3>PowerShell / Bash</h3>
-              <p>Пишу команды для обслуживания, проверок, разборов логов, автоматизации и работы с окружением.</p>
-            </div>
-          </article>
-        </div>
-      </details></section>
-
-      <section class="section section--dark collaboration" id="collaboration">
-        <h2>Как можем работать вместе</h2>
-        <div class="collaboration-grid">
-          <article><h3>В команде</h3><p>Постоянная роль с погружением в системы и процессы.</p></article>
-          <article><h3>В долгом сотрудничестве</h3><p>Регулярная работа над развитием и сопровождением.</p></article>
-        </div>
-      </section>
+</article>
+<article>
+<h3>Беру в работу</h3>
+<ul class="clean-list">
+<li>сопровождение прикладных ИС и тестовых стендов;</li>
+<li>диагностика ошибок в связке приложение - база - инфраструктура;</li>
+<li>серверная часть, SQL, API, роли доступа и интеграции;</li>
+<li>автоматизация проверок, регламентов и повторяющихся операций.</li>
+</ul>
+</article>
+</div>
+</section>
+<section class="section" id="stack">
+<details class="tools-disclosure"><summary>Инструменты и практика</summary>
+<div class="stack-grid">
+<article class="tool-card">
+<img alt="" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"/>
+<div>
+<h3>Linux</h3>
+<p>Использую для серверов, VDS, сервисов, логов, прав, процессов и ежедневной диагностики.</p>
+</div>
+</article>
+<article class="tool-card">
+<img alt="" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"/>
+<div>
+<h3>Windows</h3>
+<p>Работал с рабочими станциями, серверными утилитами, доступами, PowerShell и поддержкой пользователей.</p>
+</div>
+</article>
+<article class="tool-card">
+<img alt="" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"/>
+<div>
+<h3>Docker</h3>
+<p>Запускаю сервисы, базы, тестовые окружения и локальные проверки через контейнеры и compose-файлы.</p>
+</div>
+</article>
+<article class="tool-card">
+<img alt="" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"/>
+<div>
+<h3>nginx</h3>
+<p>Настраивал статические сайты, обратное проксирование, HTTPS, маршрутизацию и проверку виртуальных хостов.</p>
+</div>
+</article>
+<article class="tool-card">
+<img alt="" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"/>
+<div>
+<h3>PostgreSQL</h3>
+<p>Пишу SQL, проектирую таблицы, проверяю данные, работаю с правами, RPC и прикладной логикой.</p>
+</div>
+</article>
+<article class="tool-card">
+<img alt="" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"/>
+<div>
+<h3>Oracle</h3>
+<p>Использовал в сопровождении, SQL-проверках, анализе инцидентов и задачах вокруг корпоративных систем.</p>
+</div>
+</article>
+<article class="tool-card">
+<span class="tool-card__mark">FB</span>
+<div>
+<h3>Firebird</h3>
+<p>Работаю с ним на тестовых стендах: проверки БД, диагностика и сопровождение рабочих сценариев.</p>
+</div>
+</article>
+<article class="tool-card">
+<img alt="" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg"/>
+<div>
+<h3>Supabase</h3>
+<p>Использую как PostgreSQL-платформу для своих сервисов: данные, API, роли и серверные функции.</p>
+</div>
+</article>
+<article class="tool-card">
+<span class="tool-card__mark">SAP</span>
+<div>
+<h3>SAP PO / ERP / CAR</h3>
+<p>Сопровождал интеграции, idoc/XML, ритейл- и логистические процессы, инциденты и проверки данных.</p>
+</div>
+</article>
+<article class="tool-card">
+<img alt="" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"/>
+<div>
+<h3>Jira</h3>
+<p>Вёл задачи, инциденты, изменения и коммуникацию между разработкой, сопровождением и пользователями.</p>
+</div>
+</article>
+<article class="tool-card">
+<img alt="" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg"/>
+<div>
+<h3>Confluence</h3>
+<p>Писал инструкции, фиксировал регламенты, собирал базы знаний и рабочие заметки по сопровождению.</p>
+</div>
+</article>
+<article class="tool-card">
+<span class="tool-card__mark">ITSM</span>
+<div>
+<h3>BMC Remedy / HP SM</h3>
+<p>Работал с заявками, инцидентами, маршрутами согласования, шаблонами обработки и эскалациями.</p>
+</div>
+</article>
+<article class="tool-card">
+<img alt="" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg"/>
+<div>
+<h3>Grafana</h3>
+<p>Использовал для наблюдения за системами, проверки симптомов и быстрой оценки состояния сервисов.</p>
+</div>
+</article>
+<article class="tool-card">
+<span class="tool-card__mark">ZBX</span>
+<div>
+<h3>Zabbix</h3>
+<p>Работал с мониторингом серверов, алертами, доступностью стендов и первичной диагностикой отказов.</p>
+</div>
+</article>
+<article class="tool-card">
+<img alt="" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+<div>
+<h3>JavaScript</h3>
+<p>Пишу интерфейсы, небольшую клиентскую логику, проверки страниц и прикладные утилиты.</p>
+</div>
+</article>
+<article class="tool-card">
+<img alt="" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
+<div>
+<h3>Python</h3>
+<p>Использую для автоматизации, обработки файлов, проверок, диагностики и вспомогательных скриптов.</p>
+</div>
+</article>
+<article class="tool-card">
+<img alt="" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
+<div>
+<h3>Git</h3>
+<p>Веду изменения через ветки, diff, локальные проверки, историю коммитов и аккуратную публикацию.</p>
+</div>
+</article>
+<article class="tool-card">
+<img alt="" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg"/>
+<div>
+<h3>PowerShell / Bash</h3>
+<p>Пишу команды для обслуживания, проверок, разборов логов, автоматизации и работы с окружением.</p>
+</div>
+</article>
+</div>
+</details></section>
+<section class="section section--dark collaboration" id="collaboration">
+<h2>Как можем работать вместе</h2>
+<div class="collaboration-grid">
+<article><h3>В команде</h3><p>Постоянная роль с погружением в системы и процессы.</p></article>
+<article><h3>В долгом сотрудничестве</h3><p>Регулярная работа над развитием и сопровождением.</p></article>
+</div>
+</section>
 <section class="section contact section--dark" id="contact">
-        <div class="contact-card">
-          <div>
-            <h2>Обсудим роль или проект</h2>
-            <p>Коротко опишите задачу, систему и ожидаемый результат.</p>
-          </div>
-          <div class="contact-actions">
-            <a class="button button--primary" href="https://t.me/PROintData" target="_blank" rel="noopener">Telegram</a>
-            <a class="button button--secondary" href="https://career.habr.com/leotechru" target="_blank" rel="noopener">Habr Career</a>
-            <a class="button button--secondary" href="https://github.com/LeoTechPro" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <a class="mobile-contact" href="https://t.me/PROintData" target="_blank" rel="noopener">Telegram</a>
-
-    <footer class="site-footer">
-      <div class="site-footer__inner">
-        <a class="brand brand--footer" href="#top">
-          <span class="brand__mark">LK</span>
-          <span>leonid.pro</span>
-        </a>
-        <nav class="site-footer__links" aria-label="Навигация в подвале"><a href="#stack">Инструменты</a><a href="#contact">Контакт</a>
-          <a href="#resume">Резюме</a>
-          <a href="#portfolio">Портфолио</a>
-          <a href="#experience">Опыт</a>
-          <a href="https://intdata.pro/" target="_blank" rel="noopener">intData.pro</a>
-        </nav>
-      </div>
-      <div class="site-footer__bottom">
-        <span>© <span data-year>2026</span> Леонид Кокорев</span>
-        <span>leonid.pro</span>
-      </div>
-    </footer>
-
-    <script src="assets/portfolio.js"></script>
-  </body>
+<div class="contact-card">
+<div>
+<h2>Обсудим роль или проект</h2>
+<p>Коротко опишите задачу, систему и ожидаемый результат.</p>
+</div>
+<div class="contact-actions">
+<a class="button button--primary" href="https://t.me/PROintData" rel="noopener" target="_blank">Telegram</a>
+<a class="button button--secondary" href="https://career.habr.com/leotechru" rel="noopener" target="_blank">Habr Career</a>
+<a class="button button--secondary" href="https://github.com/LeoTechPro" rel="noopener" target="_blank">GitHub</a>
+</div>
+</div>
+</section>
+</main>
+<a class="mobile-contact" href="https://t.me/PROintData" rel="noopener" target="_blank">Telegram</a>
+<footer class="site-footer">
+<div class="site-footer__inner">
+<a class="brand brand--footer" href="#top">
+<span class="brand__mark">LK</span>
+<span>leonid.pro</span>
+</a>
+<nav aria-label="Навигация в подвале" class="site-footer__links"><a href="#stack">Инструменты</a><a href="#contact">Контакт</a>
+<a href="#resume">Резюме</a>
+<a href="#portfolio">Портфолио</a>
+<a href="#experience">Опыт</a>
+<a href="https://intdata.pro/" rel="noopener" target="_blank">intData.pro</a>
+</nav>
+</div>
+<div class="site-footer__bottom">
+<span>© <span data-year="">2026</span> Леонид Кокорев</span>
+<span>leonid.pro</span>
+</div>
+</footer>
+<script src="assets/portfolio.js"></script>
+</body>
 </html>
