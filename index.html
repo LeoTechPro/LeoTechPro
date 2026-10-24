@@ -27,9 +27,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
     />
-    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/portfolio.css" />
   </head>
-  <body>
+  <body class="portfolio-page">
     <a class="skip-link" href="#main-content">Перейти к содержимому</a>
 
     <header class="site-header" data-header>
@@ -47,8 +47,8 @@
           <a href="#resume">Резюме</a>
           <a href="#portfolio">Портфолио</a>
           <a href="#experience">Опыт</a>
-          <a href="#stack">Стек</a>
-          <a href="#contact">Контакт</a>
+
+          <a href="#collaboration">Сотрудничество</a>
           <a class="nav-pill" href="https://intdata.pro/" target="_blank" rel="noopener">intData.pro</a>
         </nav>
       </div>
@@ -57,67 +57,17 @@
     <main id="main-content">
       <section class="hero section--hero" id="top">
         <div class="hero__content">
-          <p class="eyebrow">Резюме и портфолио</p>
-          <h1>Леонид Кокорев</h1>
-          <p class="hero__lead">
-            Я инженер сопровождения ИС и разработчик прикладных сервисов. Делаю веб-сервисы, базы данных,
-            интеграции и инфраструктуру. Отвечаю за запуск, сопровождение и диагностику.
-          </p>
+          <h1><span>Леонид</span> <span>Кокорев</span></h1>
+          <p class="hero__position">Включаюсь в команду.<br />Довожу системы до работы.</p>
+          <p class="hero__lead">Сопровождение, интеграции и ИИ-автоматизация.<br />Личное сотрудничество с бизнесом.</p>
           <div class="hero__actions">
-            <a class="button button--primary" href="#resume">Смотреть резюме</a>
-            <a class="button button--secondary" href="#portfolio">Проекты</a>
+            <a class="button button--primary" href="https://t.me/PROintData" target="_blank" rel="noopener">Обсудить сотрудничество <span aria-hidden="true">↗</span></a>
+            <a class="button button--secondary" href="#resume">Резюме</a>
           </div>
         </div>
-
-        <aside class="hero__summary" aria-label="Краткая сводка">
-          <div class="summary-card summary-card--dark">
-            <span class="summary-card__label">Сейчас</span>
-            <strong>MOEX + intData.pro</strong>
-            <p>
-              Веду тестовые стенды торговой системы ASTS и развиваю собственный проект intData.pro.
-            </p>
-          </div>
-          <div class="summary-metrics">
-            <div>
-              <span>6+</span>
-              <p>лет коммерческого опыта</p>
-            </div>
-            <div>
-              <span>2024</span>
-              <p>старт intData.pro</p>
-            </div>
-          </div>
-        </aside>
+        <div class="hero__art" aria-hidden="true"><img src="assets/orbit.png" width="800" height="900" alt="" fetchpriority="high" /></div>
       </section>
-
-      <section class="section section--tight" id="resume">
-        <div class="section-heading">
-          <p class="eyebrow">Резюме</p>
-          <h2>Профиль</h2>
-        </div>
-
-        <div class="resume-grid">
-          <article class="resume-lead">
-            <h3>Сопровождение, разработка, данные</h3>
-            <p>
-              Я работаю с прикладными системами: стендами, мониторингом, обновлениями, инцидентами,
-              SQL, интеграциями, правами доступа, документацией и поддержкой пользователей. В собственных
-              проектах добавляю к этому разработку интерфейса, серверную логику и инфраструктуру.
-            </p>
-          </article>
-
-          <article>
-            <h3>Беру в работу</h3>
-            <ul class="clean-list">
-              <li>сопровождение прикладных ИС и тестовых стендов;</li>
-              <li>диагностика ошибок в связке приложение - база - инфраструктура;</li>
-              <li>серверная часть, SQL, API, роли доступа и интеграции;</li>
-              <li>автоматизация проверок, регламентов и повторяющихся операций.</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="signal-grid" aria-label="Основные направления">
+<div class="signal-grid" aria-label="Основные направления">
           <article>
             <span>01</span>
             <h3>Разработка</h3>
@@ -134,12 +84,12 @@
             <p>PostgreSQL, Oracle, Firebird, SQL-проверки, миграции, отчеты и поиск причин в данных.</p>
           </article>
         </div>
-      </section>
 
-      <section class="section" id="portfolio">
+
+
+      <section class="section section--dark" id="portfolio">
         <div class="section-heading">
-          <p class="eyebrow">Портфолио</p>
-          <h2>Проекты</h2>
+          <h2>От диагностики —<br />до работающего решения.</h2>
         </div>
 
         <div class="project-list">
@@ -184,7 +134,7 @@
 
       <section class="section" id="experience">
         <div class="section-heading">
-          <h2>Опыт</h2>
+          <h2>Опыт, который помогает<br />видеть систему целиком</h2>
         </div>
 
         <div class="experience-line" aria-label="Опыт работы по годам">
@@ -249,12 +199,59 @@
           </article>
         </div>
       </section>
+<section class="section section--tight" id="resume">
+        <div class="section-heading">
+          <h2>Резюме</h2>
+        </div>
+
+        <aside class="hero__summary" aria-label="Краткая сводка">
+          <div class="summary-card summary-card--dark">
+            <span class="summary-card__label">Сейчас</span>
+            <strong>MOEX + intData.pro</strong>
+            <p>
+              Веду тестовые стенды торговой системы ASTS и развиваю собственный проект intData.pro.
+            </p>
+          </div>
+          <div class="summary-metrics">
+            <div>
+              <span>6+</span>
+              <p>лет коммерческого опыта</p>
+            </div>
+            <div>
+              <span>2024</span>
+              <p>старт intData.pro</p>
+            </div>
+          </div>
+        </aside>
+        <div class="resume-grid">
+          <article class="resume-lead">
+            <h3>Сопровождение, разработка, данные</h3>
+<p class="hero__lead">
+            Я инженер сопровождения ИС и разработчик прикладных сервисов. Делаю веб-сервисы, базы данных,
+            интеграции и инфраструктуру. Отвечаю за запуск, сопровождение и диагностику.
+          </p>
+            <p>
+              Я работаю с прикладными системами: стендами, мониторингом, обновлениями, инцидентами,
+              SQL, интеграциями, правами доступа, документацией и поддержкой пользователей. В собственных
+              проектах добавляю к этому разработку интерфейса, серверную логику и инфраструктуру.
+            </p>
+          </article>
+
+          <article>
+            <h3>Беру в работу</h3>
+            <ul class="clean-list">
+              <li>сопровождение прикладных ИС и тестовых стендов;</li>
+              <li>диагностика ошибок в связке приложение - база - инфраструктура;</li>
+              <li>серверная часть, SQL, API, роли доступа и интеграции;</li>
+              <li>автоматизация проверок, регламентов и повторяющихся операций.</li>
+            </ul>
+          </article>
+        </div>
+
+        </section>
 
       <section class="section" id="stack">
-        <div class="section-heading">
-          <p class="eyebrow">Стек</p>
-          <h2>Инструменты</h2>
-        </div>
+        <details class="tools-disclosure"><summary>Инструменты и практика</summary>
 
         <div class="stack-grid">
           <article class="tool-card">
@@ -384,13 +381,19 @@
             </div>
           </article>
         </div>
-      </section>
+      </details></section>
 
-      <section class="section contact" id="contact">
+      <section class="section section--dark collaboration" id="collaboration">
+        <h2>Как можем работать вместе</h2>
+        <div class="collaboration-grid">
+          <article><h3>В команде</h3><p>Постоянная роль с погружением в системы и процессы.</p></article>
+          <article><h3>В долгом сотрудничестве</h3><p>Регулярная работа над развитием и сопровождением.</p></article>
+        </div>
+      </section>
+<section class="section contact section--dark" id="contact">
         <div class="contact-card">
           <div>
-            <p class="eyebrow">Контакт</p>
-            <h2>Связаться</h2>
+            <h2>Обсудим роль или проект</h2>
             <p>Коротко опишите задачу, систему и ожидаемый результат.</p>
           </div>
           <div class="contact-actions">
@@ -410,7 +413,7 @@
           <span class="brand__mark">LK</span>
           <span>leonid.pro</span>
         </a>
-        <nav class="site-footer__links" aria-label="Навигация в подвале">
+        <nav class="site-footer__links" aria-label="Навигация в подвале"><a href="#stack">Инструменты</a><a href="#contact">Контакт</a>
           <a href="#resume">Резюме</a>
           <a href="#portfolio">Портфолио</a>
           <a href="#experience">Опыт</a>
@@ -423,6 +426,6 @@
       </div>
     </footer>
 
-    <script src="assets/site.js"></script>
+    <script src="assets/portfolio.js"></script>
   </body>
 </html>
