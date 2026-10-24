@@ -49,7 +49,7 @@ I build reliable technical contours: infrastructure, automation, monitoring, age
 ## Контакты
 
 - GitHub: [LeoTechPro](https://github.com/LeoTechPro)
-- Telegram: [@LeoTechPro](https://t.me/LeoTechPro)
+- Telegram: [@PROintData](https://t.me/PROintData)
 - LinkedIn: [leotechru](https://www.linkedin.com/in/leotechru/)
 - Habr Career: [leotechru](https://career.habr.com/leotechru)
 - Habr: [leotechru](https://habr.com/ru/users/leotechru)
